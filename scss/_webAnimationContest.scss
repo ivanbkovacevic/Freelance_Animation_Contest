@@ -1,0 +1,145 @@
+
+
+/////////////////////////////////////////////FREELANCE ANIMATION ///////////////////////////
+
+.freelanceAnimation {
+    position: relative;
+   height: 100vh;
+   width: 100%;
+    overflow: hidden;
+    .map {
+        .title {
+            color: white;
+            text-align: center;
+            font-size: 5rem;
+            transform: translateY(500%);
+        }
+        .titleParaf{
+            color: white;
+            text-align: center;
+            font-size: 2.6rem;
+            transform: translateY(800%);
+        }
+
+        height: 1000px;
+        width: 100%;
+        background-image: url(../../assets/img/hmpg_backgrounds_03a.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pointContainer {
+        @include pointContainer();
+
+        &__1 {
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+        &__2 {
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+        &__3 {
+            top:86%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+        &__4 {
+            top: 90%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+        &__5 {
+            top: 60%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+        &__6 {
+            top: 53%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            .point {
+                @include point();                  
+                @include beforeContent();
+            }
+            @include hoverTextGrow();
+        }
+
+        .textGrow {
+            h1 {
+                color: white;
+                font-size: 0rem;
+                text-align: center;
+                transition: all 0.3s;
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: 15px;
+                font-size: 0rem;
+                text-align: center;
+                transition: all 0.3s;
+            }
+    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(135, 206, 250, 0.486);
+            border-radius: 50%;
+            width: 0px;
+            height: 0px;
+            color: white;
+            font-size: 0rem;
+            text-align: center;
+            transform-origin: 0% 0%;
+            transition: all 0.3s;
+    
+        }
+    
+    }
+
+    
+
+}
+
+@keyframes pulsing {
+    0% {
+        width: 5px;
+        height: 5px;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}

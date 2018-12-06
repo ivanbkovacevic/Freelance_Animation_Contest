@@ -1,0 +1,51 @@
+
+/////////////////////FREELANCE ANIMATION////////////////////////
+@mixin pointContainer{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    color: wheat;
+}
+@mixin point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+    @mixin hoverTextGrow{
+        &:hover .point {
+            display: none;
+        }
+        &:hover .point:before {
+            animation: none;
+        }
+        &:hover .textGrow {
+            h1 {font-size: 3rem;}
+            p {font-size: 1.5rem;}
+            width: 270px;
+            height: 270px;
+            padding-top: 30%;
+        }
+    }
+    @mixin beforeContent{
+        &::before {
+            content: ' ';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 3px solid white;
+            width: 10px;
+            height: 10px;
+            transform-origin: 50% 50%;
+            transition: all 3s;
+            animation: pulsing 3000ms infinite ease-in-out;
+        }
+    }
+    /////////////////////////////////////////
