@@ -1,0 +1,32 @@
+.banner2{
+    height: 450px;
+    background-image: url(../assets/img/about2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    box-shadow: inset 500px 50px 110px 410px rgba(0, 0, 0, 0.63);
+  
+    @include media-breakpoint-down(sm) {
+        padding: 50px 20px;
+      }
+
+    h1 {
+        font-weight: bold;
+        display: block;
+        color: white;
+        text-align: left;
+        margin-bottom: 40px;
+        @include media-breakpoint-down(md) {
+          font-size: 3rem;
+        }
+      
+    }
+   p{
+       font-size: 1.9rem;
+       color: white;
+       @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+      }
+   }
+}

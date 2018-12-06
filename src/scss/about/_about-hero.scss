@@ -1,0 +1,51 @@
+.about{
+    background-color: white;
+    .hero{
+        padding: 0 100px;
+        overflow: hidden;
+        background-color: white;
+        @include media-breakpoint-down(md) {
+            padding: 10px 100px;
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 30px;
+        }
+
+        h1{
+            font-size: 5rem;
+            font-weight: bold;
+            margin-top: 110px;
+            margin-bottom: 50px;
+            text-align: center;
+            @include media-breakpoint-down(md) {
+                font-size: 3rem;
+                padding: 50px;
+            }
+           
+        }
+
+        h2{
+            color: blue;
+            font-size: 2rem;
+            @include media-breakpoint-down(md) {
+                 margin-top: 15px;
+            }
+          
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: $color-gray-dark;
+        }
+      
+        .imageBckg{
+            height: 250px;
+            background-image: url(../assets/img/whoweare.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+           
+        }
+   
+    }
+}

@@ -1,0 +1,40 @@
+.lastSection{
+    height: 500px;
+    background-image: url(../assets/img/about3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 200px;
+    @include media-breakpoint-down(md) {
+        padding: 10px 50px;
+    }
+    @include media-breakpoint-down(xs) {
+        height: 500px;
+        padding: 10px 20px;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 9px rgba(0,0,0,0.65);
+        font-weight: bold;
+        margin-bottom: 30px;
+        @include media-breakpoint-down(md) {
+          margin-top: 50px;
+        }
+        @include media-breakpoint-down(xs) {
+            margin-top: 100px;
+            font-size: 3rem;
+        }
+    }
+    p{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 9px rgba(0,0,0,0.65);
+        @include media-breakpoint-down(xs) {
+            font-weight: normal;
+            font-size: 1.7rem;
+        }
+    }
+}

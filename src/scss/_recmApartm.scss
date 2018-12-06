@@ -1,0 +1,150 @@
+.recmApartm {
+    height: 100%;
+    width: 100%;
+    padding: 100px 100px;
+    @include media-breakpoint-down(md) {
+        padding: 0px 50px;
+    }
+    
+    .wraper{
+        width: 100%;
+    }
+    h1 {
+        margin: 50px auto;
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    h4{
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        color: $color-text-blue;
+    }
+
+     p{
+         font-size: 1.5rem;
+         color: $color-gray-dark;
+     }
+     
+    .image {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.5s;
+        overflow: hidden;
+
+        &:hover .imageOverlay{
+            opacity: 1;
+        }
+
+        .imageOverlay {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.548);
+            opacity: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            transition: all 0.8s;
+        
+            p {
+                transition: all 0.8s;
+                position: absolute;
+                bottom: 1%;
+                color: white;
+                opacity: 0;
+                z-index: 2;
+                font-size: 1.5rem;
+            }
+
+            &:hover p{
+                opacity: 1;
+                bottom: 50%;
+            }
+        }
+ // background-size: 140%;
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // transition: all  0.5s ;
+        &--1 {
+            background-image: url(../assets/img/apartmentCarousel3.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--2 {
+            background-image: url(../assets/img/apartmentCarousel2.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--3 {
+            background-image: url(../assets/img/apartmentCarousel1.jpeg);
+            background-size: 160%;
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--4 {
+            background-image: url(../assets/img/about3.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--5 {
+            background-image: url(../assets/img/about2.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--6 {
+            background-image: url(../assets/img/apartment1.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--7 {
+            background-image: url(../assets/img/apartment2.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--8 {
+            background-image: url(../assets/img/apartment3.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+        &--9 {
+            background-image: url(../assets/img/apartmentCarousel2.jpeg);
+                &:hover {
+                    background-position: 4px ;
+                }
+        }
+ 
+
+
+        .price {
+            position: absolute;
+            bottom: 25%;
+            right: 0;
+            height: 30px;
+            width: 70px;
+            color: white;
+            font-size: 1.6rem;
+            background-color: $color-background-red;
+            text-align: center;
+            z-index: 22;
+            padding-top: 3px;
+
+        }
+    }
+
+
+}

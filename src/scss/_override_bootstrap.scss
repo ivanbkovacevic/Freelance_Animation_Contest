@@ -1,0 +1,19 @@
+.carousel-caption {
+    bottom: 205px;
+    @media screen and (max-width: 1240px) {
+        bottom: 25px;
+      }
+      @media screen and (max-width: 980px) {
+        bottom: 115px;
+      }
+      @include media-breakpoint-down(sm) { 
+        bottom: 1px;
+      }
+}
+
+
+
+
+
+
+

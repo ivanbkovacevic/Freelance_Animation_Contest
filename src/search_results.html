@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>Real estate website</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js">
+
+
+
+</head>
+
+<body>
+  <!-- <div class="introAnimContainer">
+      <div class="intro intro__front">
+      
+         PERA NAPRED
+      </div>
+      <div class="intro intro__back">
+         PERA NAZAD
+      </div>
+  </div>
+ <div class="coinCont">
+   <div class="coin">
+        <div class="coin__shadow--1"></div>
+        <div class="coin__shadow--2"></div>
+   </div>
+ </div> -->
+
+  <canvas id="myCanvas1" width="850" height="600">
+    <img id="brush1" src="./assets/img/stroke-original.png" alt="The Scream" width="100" height="150" />
+  </canvas>
+
+  <canvas id="myCanvas" width="850" height="600">
+    <img id="brush" src="./assets/img/stroke-original.png" alt="The Scream" width="100" height="150" />
+  </canvas>
+
+
+
+
+
+
+
+
+  <!--START NAVBAR ############################-->
+  <div id="navTop" class="navTop"></div>
+  <a href="#navTop"><i class="fas fa-chevron-circle-up navigationArrow"></i></a>
+  <nav class="navbarr">
+    <div id="open" class="toogleIcon">
+      <span></span>
+    </div>
+    <div class="brand d-lg-flex">
+      <div class="logo">RENTASPACE</div>
+      <div class="subLogo d-none d-lg-block">FIND A HOME</div>
+    </div>
+
+    <div class="cont">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <a href="apartments.html">Apartments</a>
+      <a href="contact-us.html">ContactUs</a>
+      <div id="iconsCont" class="iconsCont">
+        <i id="user" class="fas fa-user"></i>
+        <i id="close" class="fas fa-times close"></i>
+      </div>
+
+    </div>
+
+    <div id="logIn" class="logIn">
+      <input type="text" placeholder="name">
+      <input type="email" placeholder="email">
+      <button type="submit" class="myButton__1">Log in</button>
+    </div>
+  </nav>
+
+
+  <div id="side-menu" class="side-nav">
+    <div class="brand-side d-block d-lg-none">RENTASPACE</div>
+    <a href="index.html" class="side_a">Home</a>
+    <a href="search_results.html" class="side_a">Search results</a>
+    <a href="about.html" class="side_a">About</a>
+    <a href="apartments.html" class="side_a">Apartments</a>
+    <a href="contact-us.html" class="side_a">ContactUs</a>
+  </div>
+
+
+  <!--END NAVBAR ############################-->
+
+  SEARCH RESULTS
+  <p id="city" class="city">citzzzzzzzzzzzzzzz</p>
+
+  <p id="rooms" class="rooms">roooooooooooooms</p>
+
+  <img src="./assets/img/apartment1.jpeg" alt="a1">
+
+  <!--START FOOTER ############################-->
+  <footer class="footer">
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Kneza Mihajla Obrenovica 28b</a>
+    <a href="#"><i class="fas fa-phone"></i>+381 64 26 40 315</a>
+    <a href="#"><i class="fab fa-facebook-f social"></i>
+      <i class="fab fa-twitter social"></i>
+      <i class="fab fa-instagram social"></i>
+      <i class="fab fa-google-plus-g social"></i>
+    </a href="#">
+    <p>Ivan Kovacevic</p>
+  </footer>
+  <!--END FOOTER ############################-->
+  <button id='go'>GO</button>
+  <button id='reset'>reset</button>
+  <div id="cssSelector">
+    <div class="line">
+    </div>
+  </div>
+
+  <div id="JSobject">5</div>
+
+  <br>
+  <br>
+  <div class="slova">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </div>
+
+  <br>
+  <div class="esvege">esvege
+  </div>
+  <br>
+  <div class="break"></div>
+  <div id="Larray">
+    <div class="container">
+      <div class="letter letter__1">I</div>
+      <div class="letter letter__2">V</div>
+      <div class="letter letter__3">A</div>
+      <div class="letter letter__4">N</div>
+      <div class="letter letter__5"></div>
+      <div class="letter letter__6">K</div>
+      <div class="letter letter__7">O</div>
+      <div class="letter letter__8">V</div>
+      <div class="letter letter__9">A</div>
+      <div class="letter letter__10">C</div>
+      <div class="letter letter__11">E</div>
+      <div class="letter letter__12">V</div>
+      <div class="letter letter__13">I</div>
+      <div class="letter letter__14">C</div>
+    </div>
+
+  </div>
+
+  <section class="freelanceAnimation">
+
+    <div class="map">
+      <h1>HOW CAN WE HELP</h1>
+      <div class="pointContainer pointContainer__1">
+        <div class="point"></div>
+        <div class="textGrow">
+            <h1>Lorem ipsum</h1>
+            <p>dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+              dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+            </p>
+        </div>
+      </div>
+
+      <div class="pointContainer pointContainer__2">
+        <div class="point"></div>
+        <div class="textGrow">
+            <h1>Lorem ipsum</h1>
+            <p>dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+              dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+            </p>
+        </div>
+      </div>
+
+      <div class="pointContainer pointContainer__3">
+          <div class="point"></div>
+          <div class="textGrow">
+              <h1>Lorem ipsum</h1>
+              <p>dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+                dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+              </p>
+          </div>
+        </div>
+
+        <div class="pointContainer pointContainer__4">
+            <div class="point"></div>
+            <div class="textGrow">
+                <h1>Lorem ipsum</h1>
+                <p>dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+                  dolor sit amet consectetur adipisicing elit. Necessitatibus, quam?
+                </p>
+            </div>
+          </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/myJavaScript.js"></script>
+  <script src="/js/anime.min.js"></script>
+  <script src="/js/animations.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <title>Real estate website</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+</head>
+
+<body>
+  <!-- <div class="introAnimContainer">
+      <div class="intro intro__front">
+           <div class="iconTitle">Title</div> 
+         PERA NAPRED
+      </div>
+      <div class="intro intro__back">
+         PERA NAZAD
+      </div>
+  </div>
+ <div class="coinCont">
+   <div class="coin">
+     <div class="coin__shadow">
+
+     </div>
+   </div>
+ </div> -->
+    
+  <!--START NAVBAR ############################-->
+  <div id="navTop" class="navTop"></div>
+  <a href="#navTop"><i class="fas fa-chevron-circle-up navigationArrow"></i></a>
+    <nav class="navbarr"> 
+        <div id="open" class="toogleIcon">
+            <span></span>
+          </div>
+        <div class="brand d-lg-flex">
+          <div class="logo">RENTASPACE</div>
+          <div class="subLogo d-none d-lg-block">FIND A HOME</div>
+        </div>
+      
+          <div class="cont">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="search_results.html">Search results</a>
+            <a href="apartments.html">Apartments</a>
+            <a href="contact-us.html">ContactUs</a>
+            <div id="iconsCont" class="iconsCont">
+                <i id="user" class="fas fa-user"></i>
+                <i id="close" class="fas fa-times close"></i>
+            </div>
+         
+          </div>
+
+                <div id="logIn" class="logIn">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                    <button type="submit" class="myButton__1">Log in</button>
+                </div>
+      </nav>
+     
+
+      <div id="side-menu" class="side-nav">
+          <div class="brand-side d-block d-lg-none">RENTASPACE</div>
+          <a href="#" class="side_a">Home</a>
+          <a href="search_results.html" class="side_a">Search results</a>
+          <a href="about.html" class="side_a">About</a>
+          <a href="apartments.html" class="side_a">Apartments</a>
+          <a href="contact-us.html" class="side_a">ContactUs</a>
+      </div>
+
+
+  <!--END NAVBAR ############################-->
+
+  <!--START CAROUSEL ############################-->
+  <section class="myCarousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carouselDiv carouselDiv--1"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>We are the best on rental market</h1>
+         
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carouselDiv carouselDiv--2"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>We provide the best</h1>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carouselDiv carouselDiv--3"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Real Estate is our life</h1>
+          
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    <div class="formWraper d-none d-lg-block">
+      <form>
+      <div class="row no-gutters">
+        <div class="col-lg-3">
+          <input type="text" class="form-control" id="location" placeholder="Looocation">
+        </div>
+        <div class="col-lg-2">
+          <select class="custom-select" id="propertyType">
+          
+            <option value="resedential">Resedential</option>
+            <option value="commercial">Commercial</option>
+            <option value="vacant_land">Vacant Land</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select class="custom-select" id="listingType">
+           
+            <option value="exclusive">exclusive</option>
+            <option value="open_agency">Open Agency</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select class="custom-select" id="noOfBedrooms">
+          
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+            <button type="button" id="BtnSubmit" class="myButton"><span class="mySpan">Search</span></button>
+        </div>
+        </form>
+      </div>
+  </section>
+  <!--END CAROUSEL ############################-->
+
+  <!--START FORM ON md and smaler ############################-->
+  <section class="formResponsive d-xs-block d-lg-none">
+      <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <input type="text" class="form-control form-control-lg" id="location" placeholder="Location">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <select id="inputState" class="form-control form-control-lg">
+                  <option selected>Property Type</option>
+                  <option value="1">Residential</option>
+                  <option value="2">Commercial</option>
+                  <option value="3">Vacant Land</option>
+                  </select>
+            </div>
+            <div class="form-group  col-md-6">
+                <select id="inputState" class="form-control form-control-lg">
+                  <option selected>Listing Type</option>
+                  <option value="1">Exclusive Right to Sell</option>
+                  <option value="2">Exlusive Agency</option>
+                  <option value="3">Open Agency</option>
+                  </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+              <div class="form-group  col-md-6">
+                  <select id="inputState" class="form-control form-control-lg">
+                    <option selected>No. of Bedrooms</option>
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedroom</option>
+                    <option value="3">3 Bedroom</option>
+                    </select>
+              </div>
+              <div class="form-group form-control-lg col-md-6">
+                  <button type="submit" class="myButton BtnformResponsive"><span class="mySpan spanFormResponsive">Sign in</span></button>
+              </div>
+            </div>
+        </form>
+  </section>
+ <!--END FORM ON md and smaler ############################-->
+
+  <!--START RECM_APARTM ############################-->
+  <section class="recmApartm">
+    <h1>Recomended Apartmens</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--9">
+          <div class="price">$24<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Beograd</h4>
+        <p>Kneza Mihajla Obrenovića 28b</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+     
+        <div class="image image--1">
+          <div class="price">$45<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Novi Sad</h4>
+        <p>Banijska 99</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+   
+        <div class="image image--2">
+          <div class="price">$53<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Belgrade</h4>
+        <p>Knićaninova 88</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--3">
+          <div class="price">$42<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Pancevo</h4>
+        <p>Takovska 55</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--4">
+          <div class="price">$53<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Novi Sad</h4>
+        <p>Milke Markovića 67</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--5">
+          <div class="price">$66<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Belgrade</h4>
+        <p>Lenjinova 77</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--6">
+          <div class="price">$43<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Subotica</h4>
+        <p>Srbijanska 87a</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--7">
+          <div class="price">$33<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Pancevo</h4>
+        <p>Pere Segedinca 31</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="image image--8">
+          <div class="price">$56<small>/day</small>
+          </div>
+          <div class="imageOverlay">
+            <p>Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.lorem5 b lajh</p>
+          </div>
+        </div>
+        <h4>Sombor</h4>
+        <p>Kneza Miloša Obrenovića 12b</p>
+      </div>
+    </div>
+  </section>
+
+  <!--END RECM_APARTM ############################-->
+
+  <!--START OUR ADVANTAGES ############################-->
+  <section class="ourAdvantages">
+    <h1>Our Advantages</h1>
+    <video autoplay loop>
+      <source src="./assets/video/Crosby_Street.mp4">
+    </video>
+
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 text-center d-flex justify-content-center align-items-center flex-column  columnCont">
+        <div class="rectangle">
+        </div>
+        <p id="rectangle1" class="paragraf">0</p>
+        <p>Satisfied customers</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 text-center d-flex justify-content-center align-items-center flex-column columnCont">
+        <div class="rectangle">
+        </div>
+        <p id="rectangle2" class="paragraf">0</p>
+        <p>Flats rented</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 text-center d-flex justify-content-center align-items-center flex-column columnCont">
+        <div class="rectangle">
+        </div>
+        <p id="rectangle3" class="paragraf">0</p>
+        <p>Houses rented</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center align-items-center flex-column columnCont">
+        <div class="rectangle">
+        </div>
+        <p id="rectangle4" class="paragraf">0</p>
+        <p>Our supporters</p>
+      </div>
+    </div>
+  </section>
+
+  <!--END OUR ADVANTAGES ############################-->
+
+  <!--START SERVICES ############################-->
+
+  <section class="services">
+    <h1>Services</h1>
+    <div class="row no-gutters">
+      <div class="cont col-lg-3 col-md-6">
+        <div class="image image--1">
+            <div class="overlay">
+                <p>Vacation Rentals</p>
+               <button type="submit" class="myButton"><span class="mySpan">Call</span></button>
+              </div>
+        </div>
+        
+      </div>
+      <div class="cont col-lg-3 col-md-6">
+        <div class="image image--1">
+            <div class="overlay">
+                <p>Vacation Rentals</p>
+                <button type="submit" class="myButton"><span class="mySpan">Call</span></button>
+              </div>
+        </div>
+      </div>
+      <div class="cont col-lg-3 col-md-6">
+        <div class="image image--1">
+            <div class="overlay">
+                <p>Vacation Rentals</p>
+                <button type="submit" class="myButton"><span class="mySpan">Call</span></button>
+              </div>
+        </div>
+       
+      </div>
+      <div class="cont col-lg-3 col-md-6">
+        <div class="image image--1">
+            <div class="overlay">
+                <p>Vacation Rentals</p>
+                <button type="submit" class="myButton"><span class="mySpan">Call</span></button>
+              </div>
+        </div>
+       
+      </div>
+    </div>
+    <button class="myButton btnServices"><span class="mySpan">All services</span></button>
+  </section>
+  <!--END SERVICES ############################-->
+
+  <!--START TESTEMONIALS ############################-->
+  <section class="testemonials">
+      <div id="carouselExampleFade11" class="carousel slide carousel-fade" data-ride="carousel11">
+          <ol class="carousel-indicators myIndicators">
+              <li data-target="#carouselExampleIndicators11" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators11" data-slide-to="2"></li>
+            </ol>
+            <h1>Testemonials</h1>
+          <div class="carousel-inner">
+            <div class="carousel-item text-center  active">
+                <div class="image image__1 mx-auto"></div>
+                    <p>Ann Green</p>
+                    <p><i class="fas fa-quote-right"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, totam amet?
+                    </p>
+            </div>
+            <div class="carousel-item text-center ">
+                <div class="image image__2 mx-auto"> </div>  
+                  <p>Ann Green</p>
+                  <p><i class="fas fa-quote-right"></i></p>
+                  <p>Lorem ipsum dolor sit amet consectetur, 
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit adipisci omnis cum.
+                  </p>
+            </div>
+            <div class="carousel-item text-center ">
+                <div class="image image__3 mx-auto"></div>
+                  <p>Ann Green</p>
+                  <p><i class="fas fa-quote-right"></i></p>
+                  <p>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Rerum saepe obcaecati est excepturi.
+                  </p>
+            </div>
+          </div>
+          <a class="carousel-control-prev " href="#carouselExampleFade11" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade11" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+<!-- ------------------------------- -->
+      
+  </section>
+
+  <!--END TESTEMONIALS ############################-->
+
+    <!--START CONTACTUS ############################-->
+
+    <section class="contactUs">
+      <h1>Contact Us</h1>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control form-control-lg" id="name" placeholder="Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control form-control-lg" id="telephone" placeholder="Telephone">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          
+            <button type="submit" class="myButton"><span class="mySpan">Send</span></button>
+          </form>
+    </section>
+
+    <!--END CONTACTUS ############################-->
+
+    <!--START FOOTER ############################-->
+  <footer class="footer">
+      <a href="#"><i class="fas fa-map-marker-alt"></i>Kneza Mihajla Obrenovica 28b</a>
+      <a href="#"><i class="fas fa-phone"></i>+381 64 26 40 315</a>
+      <a href="#"><i class="fab fa-facebook-f social"></i>
+        <i class="fab fa-twitter social"></i>
+        <i class="fab fa-instagram social"></i>
+        <i class="fab fa-google-plus-g social"></i>
+      </a href="#">
+      <p>Ivan Kovacevic</p>
+  </footer>
+    <!--END FOOTER ############################-->
+
+    <!-- <div class="test test__1">1</div>
+    <div class="test test__2">2</div>
+    <div class="test test__3">3</div> -->
+
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/myJavaScript.js"></script>
+</body>
+
+</html>

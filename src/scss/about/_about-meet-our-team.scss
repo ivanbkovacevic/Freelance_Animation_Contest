@@ -1,0 +1,85 @@
+.meetOurTeam{
+    padding: 100px;
+
+    @include media-breakpoint-down(md) {
+        padding: 10px 50px;
+    }
+    h1{
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 80px;
+        @include media-breakpoint-down(md) {
+            padding: 10px;
+        }
+    }
+
+
+    .image{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 250px;
+        padding:  10px;
+        background-color: aliceblue;
+        margin: 20px 0;
+        transition: all 0.4s;
+      
+
+        &:hover{
+            box-shadow: inset 15px -90px 85px 95px rgba(0, 0, 0, 0.514);
+        }
+
+        &:hover p:last-child{
+            margin-bottom: 50px;
+        }
+
+        a{
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s;    
+            &:hover{
+                color: rgb(55, 55, 231);
+            }
+        }
+    
+        p{
+            transition: all 0.4s;    
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            
+        }
+
+        &__1{
+            background-image: url(../assets/img/people1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          
+        }
+        &__2{
+            background-image: url(../assets/img/people2.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__3{
+            background-image: url(../assets/img/people3.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__4{
+            background-image: url(../assets/img/people4.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

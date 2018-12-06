@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Sets up the Base 10 stuff */
+    scroll-behavior: smooth;
+}
+
+body {
+  
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: $color-back;
+}
+
+a:hover{text-decoration: none;}
+
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3.5rem;}
+h4{font-size: 3rem;}
+/* 
+////////////////PRE SET/////////////////////////// */

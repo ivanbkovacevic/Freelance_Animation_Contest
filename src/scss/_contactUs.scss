@@ -1,0 +1,19 @@
+.contactUs{
+    padding: 150px;
+    @include media-breakpoint-down(md) {
+        padding: 50px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 70px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .myButton{
+        margin: 10px 45%;
+    }
+}

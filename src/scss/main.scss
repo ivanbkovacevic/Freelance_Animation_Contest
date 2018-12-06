@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import 'variables';
+@import 'override_bootstrap';
+@import 'mixins';
+@import 'basics';
+@import 'components';
+@import 'navbar';
+@import 'myNavbar';
+@import 'carousel';
+@import 'formResponsive';
+@import 'recmApartm';
+@import 'ourAdvantages';
+@import 'services';
+@import 'testemonials';
+@import 'contactUs';
+@import 'footer';
+@import './about/about-hero';
+@import './about/about-apartment-styles';
+@import './about/about-meet-our-team';
+@import './about/about-last-section';
+@import './apartments/apartments-section-1';
+@import './apartments/apartments-banner-1';
+@import './apartments/apartments-banner-2';
+@import './contact-us/contact-us';
+@import './search-results/search-results';
+
+
